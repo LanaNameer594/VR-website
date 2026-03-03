@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MagicalForsetVR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+  <section id="hero">
+    <div class="parallax-foreground">
+      <img src="images/buildings_front.png" alt="Front">
+    </div>
+    <div class="section-box">
+      <div class="content-wrap">
+        <header>
+          <a class="header-logo"><span>magicalforest</span>VR</a>
+          <nav>
+            <a href="index.html" class="nav-items active">Home</a>
+            <a href="about.html" class="nav-items">About</a>
+            <a href="mission.html" class="nav-items">Our Mission</a>  
+           
+            <a href="contact.html" class="nav-items">Contact</a>   
+          </nav>
+        </header>
+        <div class="hero-content">
+          <h3>Magical Forest</h3>
+          <h1>VR Experience</h1>
+          <p>Magical Forest VR is a virtual reality experience that combines the latest technology with a strong stoy driven narrative. The experience invites participants to embark on a journey through a beautiful forest, with the premise inspiring action against climate change. <br><br>This innovative VR experience isn’t just about playing a game; it’s about creating a deep connection with nature.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="scroll-section">
+    <div class="parallax-foreground">
+      <img src="images/trees_front.png" alt="Front">
+    </div>
+    <div class="section-fade"></div>
+      <div class="section-box">
+        <div class="content-wrap">
+          <div class="hero-content">
+            <h5>This immersive world invites you to <strong>explore, feel, and act.</strong> <br><br> Discover a forest that responds to your presence <br>then take your experience beyond the headset into the real world.</h5>
+              <img src="images/logo_second.png" class="hero-img" alt="VR Headset">
+            <button class="hero-btn" id="explore-btn">Begin Your Journey</button>
+          </div>
+        </div>
+      </div>
+      <div id="video-overlay" class="hidden">
+        <div class="video-container">
+          <button class="close-btn">&times;</button>
+          <video controls autoplay>
+            <source src="clips/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      
+  </section>
+
+  <script>
+    const exploreBtn = document.getElementById('explore-btn');
+    const overlay = document.getElementById('video-overlay');
+    const closeBtn = document.querySelector('.close-btn');
+  
+    exploreBtn.addEventListener('click', () => {
+      overlay.classList.remove('hidden');
+    });
+  
+    closeBtn.addEventListener('click', () => {
+      overlay.classList.add('hidden');
+      const video = overlay.querySelector('video');
+      video.pause();
+      video.currentTime = 0;
+    });
+  </script>
+
+
+</body>
+</html>
+
+

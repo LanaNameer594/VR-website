@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MagicalForsetVR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="hero">
+      <div class="section-box">
+        <div class="content-wrap">
+          <header>
+            <a class="header-logo"><span>magicalforest</span>VR</a>
+            <nav>
+              <a href="index.html" class="nav-items">Home</a>
+              <a href="about.html" class="nav-items">About</a>
+              <a href="mission.html" class="nav-items">Our Mission</a>    
+          
+              <a href="contact.html" class="nav-items active">Contact</a>  
+            </nav>
+          </header>
+          <div class="hero-content">
+            <h1>Contact Us</h1>
+          </div>
+          <div class="form" >
+            <p>Have questions, ideas, or feedback?</p>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="fecd17f1-f88a-4846-a69c-35d46e148725">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+    
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+    
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </div>
+    
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
